@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "email": "abcd@naver.com",
+      "password": "$2a$10$hVClfy.bToyPEEoFd0MSKu1sxi5LQXE0WJg.9X8EakJNNknyhyFAG",
+      "id": 1
+    },
+    {
+      "email": "admin@naver.com",
+      "password": "$2a$10$ixWNq8dJJxJR0zPo7aCvZe7DsVEMsykynkORvD/xW6kr9s.s3c.ma",
+      "id": 2
+    }
+  ]
+}

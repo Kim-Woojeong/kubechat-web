@@ -6,7 +6,7 @@ import Root from './Root';
 import reportWebVitals from './reportWebVitals';
 
 axios.defaults.baseURL = "http://localhost";
-axios.defaults.withCredentials = true;
+axios.defaults.withCredentials = true
 
 ReactDOM.render(
   <Root />,
