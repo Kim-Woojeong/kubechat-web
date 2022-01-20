@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from "axios";
 import './index.css';
 import Root from './Root';
 import reportWebVitals from './reportWebVitals';
+
+axios.defaults.baseURL = "http://localhost";
+axios.defaults.withCredentials = true;
 
 ReactDOM.render(
   <Root />,
