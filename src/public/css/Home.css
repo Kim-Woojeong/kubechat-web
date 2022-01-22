@@ -18,6 +18,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  z-index: 40000;
 }
 
 .App-link {
@@ -53,18 +54,26 @@ p {
 }
 
 .main-container {
-  height: 70vh;
+  display: flex;
+  flex-direction: cloumn;
+  height: 100%;
   background-color: aquamarine;
+  padding-left: 0;
 }
 
 .left-sidebar {
-  position: absolute;
-  width: 240px;
-  height: 100%;
-  top: 0;
+  /* flex-direction: cloumn; */
+  flex-basis: 20%;
   /* hidden part again!! */
-  margin-top: 11vh;
+  /* margin-top: 11vh; */
   background: #fff;
+  /* z-index: ; */
+}
+
+.page-wrapper {
+  background-color: #ffdbf0;
+  flex-basis: 80%;
+  height: 100%;
 }
 
 footer {

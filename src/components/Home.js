@@ -1,5 +1,6 @@
 import "../public/css/Home.css";
 import { Link } from "react-router-dom";
+import Dashboard from "./Dashboard";
 
 function App() {
   return (
@@ -23,12 +24,13 @@ function App() {
       {/* End App-header */}
       {/* main-container */}
       <div className="main-container">
-        Home
         {/* left-sidebar */}
         <div className="left-sidebar">left-sidebar</div>
         {/* End left-sidebar */}
         {/* page-wrapper */}
-        <div className="page-wrapper"></div>
+        <div className="page-wrapper">
+          <Dashboard />
+        </div>
         {/* page-wrapper */}
       </div>
       {/* End main-container */}
