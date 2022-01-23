@@ -1,115 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      *, :after, :before{
-        box-sizing: border-box;
-      }
-      html{
-        display: block;
-      }
-      body{
-        display: block;
-        margin:0;
-        min-height: 100%;
-      }
-      div{
-        display: block;
-      }
-
-      .logo{
-        text-align: center;
-      }
-
-      #header{
-        position: fixed;
-        display:block;
-        margin-left:250px;
-        text-align: right;
-        width:auto;
-        right:0;
-        left:0;
-        top:0;
-        height: 39px;
-        background-color: #f1f1f1;
-
-      }
-      #header a{
-        margin:10px;
-        align-items:center;
-        justify-content: right;
-        display:flex;
-        font-size:15px;
-        text-decoration: none;
-      }
-      #header a:active, #header a:visited{
-        color: #111111;
-      }
-
-      #menubar{
-        display: block;
-        position: fixed;
-        left:0;
-        top: 0;
-        bottom: 0;
-        min-width: 250px;
-        padding:1.5rem;
-        overflow-y: auto;
-        border-right-width:thin;
-        border-right-style: solid;
-        border-right-color:lightgrey;
-        overflow-y: auto;
-      }
-
-      .menu1{
-        flex-direction: column;
-        align-items: stretch;
-        text-align: center;
-      }
-
-      .sidenav {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-        height: 80%;
-        min-width: 202px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #ffffff;
-        overflow-x: hidden;
-        margin-top: 110px;
-      }
-
-      .sidenav a, .dropdown-btn {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 15pt;
-        color: #111111;
-        display: block;
-        border: none;
-        background: none;
-        width: 100%;
-        text-align: left;
-        cursor: pointer;
-        outline: none;
-      }
-
-      .sidenav a:hover, .dropdown-btn:hover, #header a:hover{
-        color: #616161;
-      }
-
-      .dropdown-container {
-        display: none;
-        background-color: #ffffff;
-        padding-left: 8px;
-      }
-      .dropdown-container a{
-        font-size:13pt;
-      }
-
-    </style>
-
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -128,7 +19,6 @@
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
-
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
@@ -136,64 +26,15 @@
     <title>React App</title>
   </head>
   <body>
-
-    <div id="dashboard">
-        <div id="header">
-          <a href="#">login</a>
-        </div>
-        <div>
-          
-        </div>
-        <nav id="menubar">
-          <div class="menu1">
-            <a class="logo" href="#">
-              <img src="favicon.ico" alt="...">
-            </a>
-            <div class="sidenav">
-              <button class="dropdown-btn">메뉴1</button>
-              <div class="dropdown-container">
-                <a href="#">연차조회 및 신청</a>
-                <a href="#">식단조회</a>
-                <a href="#">부서별연락처조회</a>
-                <a href="#">사내일정 조회</a>
-                <a href="#">재고조회 및 신청</a>
-              </div>
-              <button class="dropdown-btn">메뉴2</button>
-              <div class="dropdown-container">
-                <a href="#">1:1채팅</a>
-                <a href="#">사내직원소리함</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        
-
-        <div id="content">
-          <section class="page-wrapper">
-            
-          </section>
-        </div>
-        
-    </div>
-
-
-    <script>
-      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-      var dropdown = document.getElementsByClassName("dropdown-btn");
-      var i;
-      
-      for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-        } else {
-        dropdownContent.style.display = "block";
-        }
-        });
-      }
-      </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
   </body>
-  
 </html>
