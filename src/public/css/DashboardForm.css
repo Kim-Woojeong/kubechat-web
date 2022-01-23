@@ -1,0 +1,73 @@
+*, :after, :before{
+    box-sizing: border-box;
+}
+
+div{
+    display: block;
+}
+
+.logo{
+    text-align: center;
+}
+
+.menubar{
+    display: block;
+    position: fixed;
+    left:0;
+    top: 0;
+    bottom: 0;
+    min-width: 250px;
+    padding:1.5rem;
+    overflow-y: auto;
+    border-right-width:thin;
+    border-right-style: solid;
+    border-right-color:lightgrey;
+    overflow-y: auto;
+}
+
+.menu{
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+}
+
+.sidenav {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    height: 80%;
+    min-width: 202px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    margin-top: 110px;
+}
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15pt;
+    color: #111111;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover, #header a:hover{
+    color: #616161;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #ffffff;
+    padding-left: 8px;
+}
+.dropdown-container a{
+    font-size:13pt;
+}
