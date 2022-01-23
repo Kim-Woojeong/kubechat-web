@@ -1,6 +1,7 @@
 import "../public/css/Home.css";
 import { Link } from "react-router-dom";
 import Dashboard from "./Dashboard";
+import DashboardForm from "./DashboardForm";
 
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
       {/* main-container */}
       <div className="main-container">
         {/* left-sidebar */}
-        <div className="left-sidebar">left-sidebar</div>
+        <div className="left-sidebar">
+          <DashboardForm />
+        </div>
         {/* End left-sidebar */}
         {/* page-wrapper */}
         <div className="page-wrapper">
