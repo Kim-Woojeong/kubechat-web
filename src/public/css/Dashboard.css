@@ -1,0 +1,93 @@
+:root {
+  /* Color */
+
+  /* Size */
+  --padding: ;
+
+  /* Font Size */
+  --font-large: 30px;
+  --font-medium: 20px;
+  --font-small: 15px;
+  --font-micro: 10px;
+}
+
+.dashboard_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row_page_titles {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+}
+
+.dashboard_contents {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dashContent1,
+.dashContent2,
+.dashContent3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* border: solid 1px black; */
+}
+
+.dashContent1 .simpleResults,
+.dashContent2 .graphNchart,
+.dashContent3 .information {
+  border: solid 1px black;
+  vertical-align: center;
+}
+
+.dashContent1 {
+  height: 100px;
+  align-items: center;
+}
+.dashContent1 .simpleResults {
+  width: 200px;
+  height: 100px;
+  font-size: 25px;
+}
+
+.dashContent2 {
+  height: 300px;
+}
+
+.dashContent2 .graphNchart {
+  width: 500px;
+  height: 300px;
+  font-size: 30px;
+}
+
+.graph,
+.chart {
+  width: 100%;
+  height: 100%;
+}
+
+.dashContent3 {
+  height: 200px;
+}
+
+.dashContent3 .information {
+  width: 350px;
+  height: 200px;
+  font-size: 30px;
+}
